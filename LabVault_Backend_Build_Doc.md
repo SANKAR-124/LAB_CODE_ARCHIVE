@@ -387,7 +387,7 @@ sessions), but give the code panel on the experiment page its own dark
 "code editor" background (something like #1E1E2E) so code is visually
 distinct from the explanation text next to it — this should feel like a
 real code reference tool, not a generic content site.
-- Primary accent: indigo, around #4F46E5
+- Primary accent: indigo, around #101b2aff
 - Page background: white / very light gray, around #FAFAFA
 - Code panel background: dark, around #1E1E2E, with light monospace text
 - Text (outside the code panel): dark slate, around #1F2937
