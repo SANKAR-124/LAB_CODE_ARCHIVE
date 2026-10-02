@@ -189,7 +189,7 @@ Code and its explanation are **not** split into a separate table — an experime
 | experiment_name | VARCHAR(255) | NOT NULL |
 | language | ENUM('python','c','cpp','java','sql','javascript','r','matlab','other') | NOT NULL — see note below |
 | code_content | LONGTEXT | NOT NULL — the raw code, pasted in by the admin |
-| description | TEXT | NOT NULL — free-text/markdown; the admin pastes in the description **and** any line-by-line explanation here as one block, generated however they like (including AI-assisted). No structured line-number mapping in V1 — keeping it as one text field avoids the complexity of keeping line numbers in sync every time code is edited. |
+| description | TEXT |  — free-text/markdown; the admin pastes in the description **and** any line-by-line explanation here as one block, generated however they like (including AI-assisted). No structured line-number mapping in V1 — keeping it as one text field avoids the complexity of keeping line numbers in sync every time code is edited. |
 | viva_questions | TEXT | nullable — optional, but genuinely one of the most-used things before a lab exam |
 | created_by | INT | FK → users.id |
 | created_at | DATETIME | DEFAULT CURRENT_TIMESTAMP |
