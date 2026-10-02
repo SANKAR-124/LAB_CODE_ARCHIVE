@@ -1,6 +1,7 @@
 from app.db.session import Base
 from sqlalchemy.orm import relationship
-from sqlalchemy import Column,Integer,VARCHAR,TINYINT,DateTime,func,ForeignKey,Index
+from sqlalchemy import Column,Integer,VARCHAR,DateTime,func,ForeignKey,Index
+from sqlalchemy.dialects.mysql import TINYINT
 
 class subjects(Base):
     __tablename__="subjects"

@@ -1,6 +1,7 @@
 from app.db.session import Base
 from sqlalchemy.orm import relationship
-from sqlalchemy import Column,ForeignKey,Integer,VARCHAR,Enum,LongText,DateTime,Text,func
+from sqlalchemy import Column,ForeignKey,Integer,VARCHAR,Enum,DateTime,Text,func
+from sqlalchemy.dialects.mysql import LONGTEXT
 
 class experiments(Base):
     __tablename__="experiments"
@@ -20,7 +21,7 @@ class experiments(Base):
         # Catch-all
         "Other"
     ), nullable=False)
-    code_content=Column(LongText,nullable=False)
+    code_content=Column(LONGTEXT,nullable=False)
     description=Column(Text,nullable=True)
     viva_questions=Column(Text,nullable=True)
     created_by=Column(Integer,ForeignKey("users.id",ondelete="CASCADE"),nullable=False)
